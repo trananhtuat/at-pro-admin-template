@@ -26,7 +26,8 @@
 				</a>
 			</li>
 			<li class="nav-item">
-				<img src="assets/AT-pro-black.png" alt="ATPro logo" class="logo">
+				<img src="assets/AT-pro-black.png" alt="ATPro logo" class="logo logo-light">
+				<img src="assets/AT-pro-white.png" alt="ATPro logo" class="logo logo-dark">
 			</li>
 		</ul>
 		<!-- end nav left -->
@@ -38,6 +39,12 @@
 		<!-- end form -->
 		<!-- nav right -->
 		<ul class="navbar-nav nav-right">
+			<li class="nav-item mode">
+				<a class="nav-link" href="#" onclick="switchTheme()">
+					<i class="fas fa-moon dark-icon"></i>
+					<i class="fas fa-sun light-icon"></i>
+				</a>
+			</li>
 			<li class="nav-item dropdown">
 				<a class="nav-link">
 					<i class="fas fa-bell dropdown-toggle" data-toggle="notification-menu"></i>
@@ -226,7 +233,7 @@
 					</div>
 				</ul>
 			</li>
-			<li class="nav-item">
+			<li class="nav-item avt-wrapper">
 				<div class="avt dropdown">
 					<img src="assets/tuat.jpg" alt="User image" class="dropdown-toggle" data-toggle="user-menu">
 					<ul id="user-menu" class="dropdown-menu">
@@ -375,67 +382,90 @@
 	<!-- end sidebar -->
 	<!-- main content -->
 	<div class="wrapper">
-		<div class="card">
-			<div class="card-content">
-				<h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
-
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-				<h2>Header Level 2</h2>
-
-				<ol>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
-
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-				<h3>Header Level 3</h3>
-
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
-
-				<h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
-
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-				<h2>Header Level 2</h2>
-
-				<ol>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
-
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-				<h3>Header Level 3</h3>
-
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
-
-				<h1>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h1>
-
-				<p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-				<h2>Header Level 2</h2>
-
-				<ol>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ol>
-
-				<blockquote><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p></blockquote>
-
-				<h3>Header Level 3</h3>
-
-				<ul>
-					<li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-					<li>Aliquam tincidunt mauris eu risus.</li>
-				</ul>
+		<div class="row" style="background: #909090">
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						1
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						2
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						3
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						4
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-12">
+				<div class="card">
+					<div class="card-content">
+						5
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-12">
+				<div class="card">
+					<div class="card-content">
+						6
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						7
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						8
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						9
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						10
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						11
+					</div>
+				</div>
+			</div>
+			<div class="col-1 col-m-6">
+				<div class="card">
+					<div class="card-content">
+						12
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
