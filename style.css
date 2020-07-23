@@ -1,20 +1,20 @@
 :root {
 	--primary-color: #4834d4;
-  --success-color: #6ab04c;
-  --warning-color: #f0932b;
-  --danger-color: #eb4d4b;
+	--success-color: #6ab04c;
+	--warning-color: #f0932b;
+	--danger-color: #eb4d4b;
 
-  --light-color: #212529;
-  --light-second-color: #727475;
-  --light-background: #ffffff;
-  --light-second-background: #f1f1f1;
+	--light-color: #212529;
+	--light-second-color: #727475;
+	--light-background: #ffffff;
+	--light-second-background: #f1f1f1;
 
-  --dark-color: #909090;
-  --dark-second-color: #f5f6fa;
-  --dark-background: #23242D;
-  --dark-second-background: #181818;
+	--dark-color: #909090;
+	--dark-second-color: #f5f6fa;
+	--dark-background: #23242D;
+	--dark-second-background: #181818;
 
-  --main-bg-color: var(--light-background);
+	--main-bg-color: var(--light-background);
 	--second-bg-color: var(--light-second-background);
 	--main-color: var(--light-color);
 	--second-color: var(--light-second-color);
@@ -25,10 +25,10 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+	font-family: 'Roboto', sans-serif;
 	background: var(--main-bg-color);
-  color: var(--main-color);
-  margin: 0;
+	color: var(--main-color);
+	margin: 0;
 }
 
 .navbar {
@@ -226,11 +226,11 @@ body {
 }
 
 .scrollbar-hover::-webkit-scrollbar {
-  display: none;
+	display: none;
 }
 
 .scrollbar-hover:hover::-webkit-scrollbar {
-  display: block;
+	display: block;
 }
 
 .overlay-scrollbar::-webkit-scrollbar-thumb {
@@ -331,4 +331,38 @@ body {
 
 .sidebar-expand .wrapper {
 	margin-left: 250px;
+}
+
+.card {
+	background: var(--main-bg-color);
+	color: var(--main-color);
+	border-radius: 10px;
+	margin-bottom: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-header {
+	padding: 15px 30px;
+	border-bottom: 1px solid var(--main-bg-color);
+	position: relative;
+}
+
+.card-header i {
+	color: var(--main-color);
+	position: absolute;
+	right: 30px;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+.card-header i:hover {
+	cursor: pointer;
+}
+
+.card-content {
+	padding: 20px;
+	overflow-x: auto;
+}
+.card h3 {
+	margin: 0;
 }
